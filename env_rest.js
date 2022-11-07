@@ -1,4 +1,4 @@
-export  var vus = 10;
-export  var duration = "10s";
+export  var vus = 50;
+export  var duration = "40s";
 
 
