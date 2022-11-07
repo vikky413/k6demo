@@ -1,0 +1,97 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "username": "arun",
+            "firstName": "vikram",
+            "lastName": "singh",
+            "email": "string@gmail.com",
+            "password": "stringd",
+            "phone": "stringeer",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun1",
+            "firstName": "arum",
+            "lastName": "strintyg",
+            "email": "stringrt",
+            "password": "strinrrg",
+            "phone": "stringry",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun2",
+            "firstName": "stringrry",
+            "lastName": "strinrtg",
+            "email": "stringry",
+            "password": "stringrt",
+            "phone": "stringrt",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun3",
+            "firstName": "strfging",
+            "lastName": "stringfg",
+            "email": "strinetg",
+            "password": "strineg",
+            "phone": "stringet",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun4",
+            "firstName": "stringet",
+            "lastName": "stringet",
+            "email": "stringetet",
+            "password": "stringeet",
+            "phone": "stringe",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun5",
+            "firstName": "strietng",
+            "lastName": "stringet",
+            "email": "stringet",
+            "password": "stringeee",
+            "phone": "stringdgd",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun6",
+            "firstName": "stringddg",
+            "lastName": "stWEEdging",
+            "email": "stringdg",
+            "password": "strindgg",
+            "phone": "stringdg",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun8",
+            "firstName": "stweingdg",
+            "lastName": "stwtringdg",
+            "email": "striwesgtgd",
+            "password": "strsddging",
+            "phone": "strisgng",
+            "userStatus": 0
+          },
+          {
+            "id": 0,
+            "username": "arun88",
+            "firstName": "ardfdfb",
+            "lastName": "strtring",
+            "email": "strisgrtg",
+            "password": "strtring",
+            "phone": "string",
+            "userStatus": 0
+          }
+
+
+    ]
+  }
+  
