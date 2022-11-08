@@ -2,7 +2,7 @@
     "users": [
         {
             "id": 0,
-            "username": "arunr42wrrt",
+            "username": "perafnm",
             "firstName": "vikram",
             "lastName": "singh",
             "email": "string@gmail.com",
@@ -12,7 +12,7 @@
           },
           {
             "id": 0,
-            "username": "aruwr2n1ter",
+            "username": "perayhjd",
             "firstName": "arum",
             "lastName": "strintyg",
             "email": "stringrt",
@@ -22,7 +22,7 @@
           },
           {
             "id": 0,
-            "username": "aruner24wryy2",
+            "username": "perg2131",
             "firstName": "stringrry",
             "lastName": "strinrtg",
             "email": "stringry",
@@ -32,65 +32,15 @@
           },
           {
             "id": 0,
-            "username": "arune24wrry3",
+            "username": "perary3",
             "firstName": "strfging",
             "lastName": "stringfg",
             "email": "strinetg",
             "password": "strineg",
             "phone": "stringet",
             "userStatus": 0
-          },
-          {
-            "id": 0,
-            "username": "aruny24ewrry4",
-            "firstName": "stringet",
-            "lastName": "stringet",
-            "email": "stringetet",
-            "password": "stringeet",
-            "phone": "stringe",
-            "userStatus": 0
-          },
-          {
-            "id": 0,
-            "username": "aruer24wryeryn5",
-            "firstName": "strietng",
-            "lastName": "stringet",
-            "email": "stringet",
-            "password": "stringeee",
-            "phone": "stringdgd",
-            "userStatus": 0
-          },
-          {
-            "id": 0,
-            "username": "aruer24yrwn6",
-            "firstName": "stringddg",
-            "lastName": "stWEEdging",
-            "email": "stringdg",
-            "password": "strindgg",
-            "phone": "stringdg",
-            "userStatus": 0
-          },
-          {
-            "id": 0,
-            "username": "adqw24rueryn8",
-            "firstName": "stweingdg",
-            "lastName": "stwtringdg",
-            "email": "striwesgtgd",
-            "password": "strsddging",
-            "phone": "strisgng",
-            "userStatus": 0
-          },
-          {
-            "id": 0,
-            "username": "arunrqw248ery8",
-            "firstName": "ardfdfb",
-            "lastName": "strtring",
-            "email": "strisgrtg",
-            "password": "strtring",
-            "phone": "string",
-            "userStatus": 0
           }
-
+          
 
     ]
   }
