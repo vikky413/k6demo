@@ -7,6 +7,13 @@ import { duration } from './env_rest.js';
 
 
 export const options = {
+  // stages: [
+  //   //{ duration: "5s", target: 10 }, // needs for local testing
+  //   { duration: "10s", target: 10 },
+  //   { duration: "40s", target: 10 },
+  //   { duration: "20s", target: 10 },
+  //   {duration:"20s",target:10}
+  // ],
   ext: {
     loadimpact: {
       projectID: 3607882,
@@ -18,7 +25,7 @@ export const options = {
   duration:duration,
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
-    http_req_duration: ['p(95)<600'], // 95% of requests should be below 600ms
+    http_req_duration: ['p(95)<1000'], // 95% of requests should be below 600ms
   },
   
 }
