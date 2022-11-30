@@ -1,11 +1,19 @@
 import http from 'k6/http';
 import { check } from 'k6';
 import { SharedArray } from 'k6/data';
-import { duration,url,vus } from './env_rest_api.js';
+import {url } from './env_rest_api.js';
 
 
 
 export const options = {
+
+  stages: [
+    { duration: "10s", target: 5 }, // needs for local testing
+    { duration: "10s", target: 5 },
+    { duration: "10s", target: 5 },
+    { duration: "10s", target: 5 }
+  ],
+
  
   ext: {
     loadimpact: {
@@ -14,8 +22,8 @@ export const options = {
       name: "Demo 1"
     }
   },
-  vus:vus,
-  duration:duration,
+  // vus:vus,
+  // duration:duration,
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
     http_req_duration: ['p(95)<1000'], // 95% of requests should be below 600ms
@@ -94,5 +102,6 @@ export default function () {
       "delete status is ok ": (r)=> r.status === 200,
     })
   }
-
+  
 }
+
