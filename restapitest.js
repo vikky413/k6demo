@@ -1,19 +1,12 @@
+import http from 'k6/http';
 import { check } from 'k6';
 import { SharedArray } from 'k6/data';
-import http from 'k6/http';
-import { vus } from './env_rest_api.js';
-import { duration,url } from './env_rest_api.js';
+import { duration,url,vus } from './env_rest_api.js';
 
 
 
 export const options = {
-  // stages: [
-  //   //{ duration: "5s", target: 10 }, // needs for local testing
-  //   { duration: "10s", target: 10 },
-  //   { duration: "40s", target: 10 },
-  //   { duration: "20s", target: 10 },
-  //   {duration:"20s",target:10}
-  // ],
+ 
   ext: {
     loadimpact: {
       projectID: 3607882,
@@ -30,15 +23,14 @@ export const options = {
   
 }
 
-// not using SharedArray here will mean that the code in the function call (that is what loads and
-// parses the json) will be executed per each VU which also means that there will be a complete copy
-// per each VU
-const data = new SharedArray('some data name', function () {
+
+const data = new SharedArray('Rest Api Data', function () {
   return JSON.parse(open('./restapiData.json')).users;
 });
 
 
 export default function () {
+
   const params = {
     headers: {
       'Content-Type': 'application/json',
@@ -89,8 +81,8 @@ export default function () {
     })
   }
 
-  // This is delete Data 
-
+  //This is delete Data 
+  
   for(const deldata of data) {
     const urldel = url + `/${deldata.username}`;
     const delres = http.del(urldel,null,params,{
