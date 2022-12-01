@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run k6 test') {
       steps {
-        sh 'k6 run --out influxdb=http://10.88.109.183:8086/myk6db script.js'
+        sh 'k6 run --out influxdb=http://10.88.109.183:8086/myk6db restapitest.js'
       }
     }
   }
