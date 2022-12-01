@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('verify k6') {
+      steps {
+        sh 'k6 version'
+      }
+    }
+    stage('run k6 test') {
+      steps {
+        sh 'K6_CLOUD_TOKEN=<YOUR_K6_CLOUD_API_TOKEN> k6 run --out cloud script.js'
+      }
+    }
+  }
+}
