@@ -1,16 +1,17 @@
 import http from 'k6/http';
 import { check } from 'k6';
 import { SharedArray } from 'k6/data';
-import {url } from './env_rest_api.js';
+import {url,vus,duration } from './env_rest_api.js';
 
 
 
 export const options = {
-
+  vus:vus,
+  // duration:duration,
   stages: [
-    { duration: "10s", target: 5 }, // needs for local testing
-    { duration: "10s", target: 5 },
-    { duration: "10s", target: 5 },
+    { duration: "5s", target: 5 }, // needs for local testing
+    { duration: "5s", target: 5 },
+    { duration: "5s", target: 5 },
     { duration: "10s", target: 5 }
   ],
 
@@ -19,11 +20,10 @@ export const options = {
     loadimpact: {
       projectID: 3607882,
       // Test runs with the same name groups test runs together
-      name: "Demo 1"
+      name: "Rest Api"
     }
   },
-  // vus:vus,
-  // duration:duration,
+  
   thresholds: {
     http_req_failed: ['rate<0.01'], // http errors should be less than 1%
     http_req_duration: ['p(95)<1000'], // 95% of requests should be below 600ms
