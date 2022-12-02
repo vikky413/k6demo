@@ -8,7 +8,7 @@ pipeline {
     }
     stage('run k6 test') {
       steps {
-        sh 'K6_CLOUD_TOKEN=K6_CLOUD_API_TOKEN k6 run --out cloud restapitest.js'
+        sh 'K6_CLOUD_TOKEN=9a78028b71a8c29937877b53d39df97dca36cbcfe5c3d362a395cd229ca3cd45 k6 run --out cloud restapitest.js'
       }
     }
   }
